@@ -2,6 +2,8 @@
 
 All programmers build a calculator app to train at some point in their career. Here's mine. 🔢
 
+**REMEMBER: It's a challenge, try your best and don't look for help on the internet!**
+
 ## Roadmap
 
 - Install Parcel, Redux, TypeScript and Less.
