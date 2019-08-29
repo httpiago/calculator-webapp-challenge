@@ -2,26 +2,22 @@
 
 All programmers build a calculator app to train at some point in their career. Here's mine. 🔢
 
+[![Online Demo](https://img.shields.io/badge/Online-Demo-brightgreen.svg)](https://httpiago.github.io/calculator-webapp-challenge/)
+
 **REMEMBER: It's a challenge, try your best and don't look for help on the internet!**
 
-## Roadmap
+## Used packages
 
-- Install Parcel, Redux, TypeScript and Less.
-- Create buttons style with all possible states.
-- Create the interface using CSS flexbox and grid.
-- Create Redux logic (using [redux-actions](https://redux-actions.js.org/)).
-- Resolve "[Expected behaviors](#expected-behaviors)" session items.
-- Host on GitHub pages.
-- Write the documentation.
+- [Parcel](https://parceljs.org)
+- [Redux](https://redux.js.org)
+- [Typescript](https://www.typescriptlang.org)
+- [Less](lesscss.org)
+- [Lodash](https://lodash.com)
+- [Jest](https://jestjs.io)
 
-## Expected behaviors:
+## Comands
 
-- [ ] Allow use negative numbers.
-- [ ] Allow use decimal numbers.
-- [ ] Allow chain multiple calculations (5 + 5 - 2 * 4).
-- [ ] Allow edit a number in the calculation chain.
-- [ ] Allow prioritization of calculations using parentheses "(5 + 5) - 2".
-- [ ] **Should be completely keyboard accessible!**
-- [ ] **Should be accessible to screen readers for visually impaired!**
-- [ ] Should save calculation history in memory and browser.
-- [ ] Should be installable and work offline.
+- **``yarn run dev``**: Start parcel in development mode with live-reload on port http://localhost:1234
+- **``yarn run test``**: Run the tests.
+- **``yarn run build``**: Create a production version of the site ready to be hosted.
+- **``yarn run deploy``**: Deploy demonstration on Github Pages.
