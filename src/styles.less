@@ -1,0 +1,142 @@
+@black-color: #222222;
+@white-color: darken(white, 2%);
+@primary-color: #2679E9;
+@default-font-size: 20px;
+@gap: 2px;
+@focus-outline: 4px solid @white-color;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+}
+
+html, body, main {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: @black-color;
+  margin: 0px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: @default-font-size;
+  font-weight: normal;
+  line-height: normal;
+  color: @white-color;
+}
+
+main {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 4px;
+  box-shadow: 0 0 30px 12px lighten(@black-color, 2%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  padding: 40px 26px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  white-space: nowrap;
+
+  .operation-chain {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 43px;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 16px;
+    font-size: 32px;
+    line-height: inherit;
+    font-weight: inherit;
+    text-align: right;
+    color: @white-color;
+
+    &.isFinalResult {
+      color: #32db32;
+    }
+    
+    &:focus {
+      outline: @focus-outline;
+    }
+  }
+
+  .result {
+    font-size: 20px;
+    height: 27px;
+    opacity: 0.7;
+  }
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr, 1fr;
+  grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . ." ". . . .";
+  grid-gap: @gap;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: lighten(@black-color, 8%);
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  min-height: 60px;
+  min-width: 90px;
+  font-size: 30px;
+  color: @white-color;
+  cursor: pointer;
+  outline: none;
+  z-index: 0;
+
+  &:hover {
+    background-color: lighten(@black-color, 16%);
+  }
+
+  &:active {
+    background-color: @black-color;
+  }
+
+  &:not(:active):focus {
+    outline: @focus-outline;
+    z-index: 5;
+  }
+
+  &[disabled] {
+    opacity: .3;
+    pointer-events: none;
+    outline: none;
+  }
+}
+
+button.primary {
+  background-color: @primary-color;
+  color: @white-color;
+
+  &:hover {
+    background-color: lighten(@primary-color, 8%);
+  }
+
+  &:active {
+    background-color: darken(@primary-color, 10%);
+  }
+}
+
+button.subtract {
+  font-size: 50px;
+  line-height: 36px;
+}
