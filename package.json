@@ -8,6 +8,7 @@
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url https://httpiago.github.io/calculator-webapp-challenge/",
     "deploy": "del-cli dist && yarn run build && gh-pages -d dist",
+    "test": "jest"
   },
   "dependencies": {
     "less": "^3.10.1",
@@ -18,9 +19,11 @@
     "typescript": "^3.5.3"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.17",
     "@types/lodash": "^4.14.137",
     "del-cli": "^2.0.0",
     "gh-pages": "^2.1.1",
+    "jest": "^24.9.0",
     "ts-jest": "^24.0.2"
   }
 }
