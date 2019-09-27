@@ -2,7 +2,7 @@
 
 All programmers build a calculator app to train at some point in their career. Here's mine. 🔢
 
-[![Online Demo](https://img.shields.io/badge/Online-Demo-brightgreen.svg)](https://httpiago.github.io/calculator-webapp-challenge/)
+[![Online Demo](https://img.shields.io/badge/Online-Demo-brightgreen.svg)](https://iagobruno.github.io/calculator-webapp-challenge/)
 
 **REMEMBER: It's a challenge, try your best and don't look for help on the internet!**
 
