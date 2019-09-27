@@ -1,12 +1,12 @@
 {
   "name": "calculator-webapp-challenge",
   "version": "0.1.0",
-  "homepage": "https://httpiago.github.io/calculator-webapp-challenge/",
-  "repository": "https://github.com/httpiago/calculator-webapp-challenge.git",
+  "homepage": "https://iagobruno.github.io/calculator-webapp-challenge/",
+  "repository": "https://github.com/iagobruno/calculator-webapp-challenge.git",
   "private": true,
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url https://httpiago.github.io/calculator-webapp-challenge/",
+    "build": "parcel build src/index.html --public-url https://iagobruno.github.io/calculator-webapp-challenge/",
     "deploy": "del-cli dist && yarn run build && gh-pages -d dist",
     "test": "jest"
   },
